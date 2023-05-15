@@ -48,8 +48,8 @@ container.addEventListener("click", (e) => {
     candidateThreePerc = (candidateThreeVotes * 100) / totalVotes;
 
     textTotal.innerText = `the total vote count is: ${totalVotes}`;
-    textCanOne.innerText = `Candidate 1 has ${candidateOneVotes} votes and ${candidateOnePerc}% of the votes`;
-    textCanTwo.innerText = `Candidate 2 has ${candidateTwoVotes} votes and ${candidateTwoPerc}% of the votes`;
-    textCanThree.innerText = `Candidate 3 has ${candidateThreeVotes} votes and ${candidateThreePerc}% of the votes`;
+    textCanOne.innerText = `Candidate 1 has ${candidateOneVotes} votes and ${candidateOnePerc.toFixed(2)}% of the votes`;
+    textCanTwo.innerText = `Candidate 2 has ${candidateTwoVotes} votes and ${candidateTwoPerc.toFixed(2)}% of the votes`;
+    textCanThree.innerText = `Candidate 3 has ${candidateThreeVotes} votes and ${candidateThreePerc.toFixed(2)}% of the votes`;
   }
 });
